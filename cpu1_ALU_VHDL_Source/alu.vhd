@@ -40,6 +40,17 @@ architecture Behavioral of alu is
 
 begin
 
+process(inp_a, inp_b, sel)
+begin
+case sel is
+	when "0000" => 
+	out_alu<= inp_a; --alupassOp
+	when "0001" => 
+	out_alu<= inp_a and inp_b; --andOp
+	
+end case;
+
+end process;
 
 end Behavioral;
 
