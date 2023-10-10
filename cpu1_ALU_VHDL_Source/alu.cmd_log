@@ -1,3 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/Administrator/Downloads/Assignment/cpu1_ALU_VHDL_Source/alu.xst" -ofn "C:/Users/Administrator/Downloads/Assignment/cpu1_ALU_VHDL_Source/alu.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 alu.ngc alu.ngd  
-map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o alu_map.ncd alu.ngd alu.pcf 
