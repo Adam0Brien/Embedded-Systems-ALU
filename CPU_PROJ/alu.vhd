@@ -38,38 +38,35 @@ entity alu is
 end alu;
 
 architecture Behavioral of alu is
-
-begin
-
-process(inp_a, inp_b, sel, clk)
-begin
-case sel is
-	when "0000" => 
-	out_alu<= inp_a; --alupassOp
-	when "0001" => 
-	out_alu<= inp_a and inp_b; --andOp
-	when "0010" =>
-	out_alu<= inp_a or inp_b; -- orOp
-	when "0011" =>
-	out_alu<= not inp_a; -- notOp
-	when "0100" =>
-	out_alu<= inp_a xor inp_b; -- xorOp
-	when "0101" =>
-	out_alu<= inp_a + inp_b; --plusOp
-	when "0110" =>
-	out_alu<= inp_a - inp_b; -- minusOp
-	when "0111" =>
-	out_alu<= inp_a + 1; -- incOp
-	when "1000" =>
-	out_alu<= inp_a - 1; -- decOp
-	when "1001" =>
-	out_alu<= "0000000000000000"; -- clearOp
-	when others =>
-	NULL;
-end case;
-
-end process;
-
-
-
+    begin
+    
+      process(inp_a, inp_b, sel, clk)
+      begin
+        if falling_edge(clk) then 
+          case sel is
+            when "0000" => 
+              out_alu <= inp_a; -- alupassOp
+            when "0001" => 
+              out_alu <= inp_a and inp_b; -- andOp
+            when "0010" =>
+              out_alu <= inp_a or inp_b; -- orOp
+            when "0011" =>
+              out_alu <= not inp_a; -- notOp
+            when "0100" =>
+              out_alu <= inp_a xor inp_b; -- xorOp
+            when "0101" =>
+              out_alu <= inp_a + inp_b; -- plusOp
+            when "0110" =>
+              out_alu <= inp_a - inp_b; -- minusOp
+            when "0111" =>
+              out_alu <= inp_a + 1; -- incOp
+            when "1000" =>
+              out_alu <= inp_a - 1; -- decOp
+            when "1001" =>
+              out_alu <= "0000000000000000"; -- clearOp
+            when others =>
+              NULL;
+          end case;
+        end if;
+      end process;
 end Behavioral;
