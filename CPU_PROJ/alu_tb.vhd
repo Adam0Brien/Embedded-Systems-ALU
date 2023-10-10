@@ -46,19 +46,12 @@ BEGIN
 			sel <= "0011" ; wait for Clk_period;
 			sel <= "0100" ; wait for Clk_period;
 			sel <= "0101" ; wait for Clk_period;
+			sel <= "0110" ; wait for Clk_period;
 			sel <= "0111" ; wait for Clk_period;
 			sel <= "1000" ; wait for Clk_period;
 			sel <= "1001" ; wait for Clk_period;
-			sel <= "1001" ; wait for Clk_period;
-			sel <= "1010" ; wait for Clk_period;
-			sel <= "1011" ; wait for Clk_period;
-			sel <= "1100" ; wait for Clk_period;
-			sel <= "1101" ; wait for Clk_period;
-			sel <= "1110" ; wait for Clk_period;
-			sel <= "1111" ; wait for Clk_period;
 			
-			
-		wait;
+            wait;
 		
 	end process;
 	
