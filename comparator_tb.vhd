@@ -88,14 +88,14 @@ BEGIN
    stim_proc: process
    begin
       wait for clk_period*1;
-			inp_a <= "0000000100000001"; -- bigger
-			inp_b <= "0000000100000001"; -- smaller
-			sel <= "000" ; wait for Clk_period; -- 0
-			sel <= "001" ; wait for Clk_period;
-			sel <= "010" ; wait for Clk_period;
-			sel <= "011" ; wait for Clk_period;
-			sel <= "100" ; wait for Clk_period;
-			sel <= "101" ; wait for Clk_period;
+			inp_a <= "0000000100000001"; -- same number
+			inp_b <= "0000000100000001"; -- same number
+			sel <= "000" ; wait for Clk_period; -- expected: 1
+			sel <= "001" ; wait for Clk_period; -- expected: 0 
+			sel <= "010" ; wait for Clk_period; -- expected: 0
+			sel <= "011" ; wait for Clk_period; -- expected: 1
+			sel <= "100" ; wait for Clk_period; -- expected: 0
+			sel <= "101" ; wait for Clk_period; -- expected: 1
       wait;
    end process;
 
