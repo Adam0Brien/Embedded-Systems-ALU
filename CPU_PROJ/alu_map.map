@@ -10,10 +10,10 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Wed Sep 27 12:56:52 2023
+Mapped Date    : Wed Oct 25 12:05:44 2023
 
-WARNING:LIT:701 - PAD symbol "sel<3>" has an undefined IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "sel<3>" is not constrained (LOC) to a specific
+WARNING:LIT:701 - PAD symbol "clk" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "clk" is not constrained (LOC) to a specific
    location.
 Mapping design into LUTs...
 Running directed packing...
@@ -22,52 +22,53 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 17 secs 
-Total CPU  time at the beginning of Placer: 14 secs 
+Total REAL time at the beginning of Placer: 19 secs 
+Total CPU  time at the beginning of Placer: 16 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:cc6b) REAL time: 18 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:24f2) REAL time: 21 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:cc6b) REAL time: 18 secs 
+Phase 2.7  Design Feasibility Check (Checksum:24f2) REAL time: 21 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:cc6b) REAL time: 18 secs 
+Phase 3.31  Local Placement Optimization (Checksum:24f2) REAL time: 21 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-...
-Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:cc6b) REAL time: 19 secs 
+....
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:b7400314) REAL time: 22 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:cc6b) REAL time: 19 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:b7400314) REAL time: 22 secs 
 
 Phase 6.3  Local Placement Optimization
 ....
-Phase 6.3  Local Placement Optimization (Checksum:640d2dcb) REAL time: 20 secs 
+Phase 6.3  Local Placement Optimization (Checksum:7b64b544) REAL time: 22 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:640d2dcb) REAL time: 20 secs 
+Phase 7.5  Local Placement Optimization (Checksum:7b64b544) REAL time: 22 secs 
 
 Phase 8.8  Global Placement
-.....
+..
 ................
 ................
-Phase 8.8  Global Placement (Checksum:5f820d25) REAL time: 20 secs 
+Phase 8.8  Global Placement (Checksum:3650f644) REAL time: 23 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:5f820d25) REAL time: 20 secs 
+Phase 9.5  Local Placement Optimization (Checksum:3650f644) REAL time: 23 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:1f1c65e4) REAL time: 21 secs 
+Phase 10.18  Placement Optimization (Checksum:dbbc40f2) REAL time: 23 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:1f1c65e4) REAL time: 21 secs 
+Phase 11.5  Local Placement Optimization (Checksum:dbbc40f2) REAL time: 23 secs 
 
 Phase 12.34  Placement Validation
-Phase 12.34  Placement Validation (Checksum:1f1c65e4) REAL time: 21 secs 
+Phase 12.34  Placement Validation (Checksum:dbbc40f2) REAL time: 23 secs 
 
-Total REAL time to Placer completion: 21 secs 
-Total CPU  time to Placer completion: 17 secs 
+Total REAL time to Placer completion: 23 secs 
+Total CPU  time to Placer completion: 20 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:2452 - The IOB inp_b<0> is either not constrained (LOC)
@@ -130,6 +131,11 @@ WARNING:PhysDesignRules:2452 - The IOB inp_a<9> is either not constrained (LOC)
    This condition may seriously affect the device and will be an error in
    bitstream creation. It should be corrected by properly specifying the pin
    location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB clk is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
 WARNING:PhysDesignRules:2452 - The IOB inp_b<6> is either not constrained (LOC)
    to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
    This condition may seriously affect the device and will be an error in
@@ -336,14 +342,14 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   54
+Number of warnings:   55
 Slice Logic Utilization:
   Number of Slice Registers:                     0 out of 126,800    0%
-  Number of Slice LUTs:                        128 out of  63,400    1%
-    Number used as logic:                      127 out of  63,400    1%
-      Number using O6 output only:              97
-      Number using O5 output only:              15
-      Number using O5 and O6:                   15
+  Number of Slice LUTs:                         34 out of  63,400    1%
+    Number used as logic:                       33 out of  63,400    1%
+      Number using O6 output only:              33
+      Number using O5 output only:               0
+      Number using O5 and O6:                    0
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  19,000    0%
     Number used exclusively as route-thrus:      1
@@ -352,11 +358,11 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    50 out of  15,850    1%
-  Number of LUT Flip Flop pairs used:          128
-    Number with an unused Flip Flop:           128 out of     128  100%
-    Number with an unused LUT:                   0 out of     128    0%
-    Number of fully used LUT-FF pairs:           0 out of     128    0%
+  Number of occupied Slices:                    13 out of  15,850    1%
+  Number of LUT Flip Flop pairs used:           34
+    Number with an unused Flip Flop:            34 out of      34  100%
+    Number with an unused LUT:                   0 out of      34    0%
+    Number of fully used LUT-FF pairs:           0 out of      34    0%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,800    0%
 
@@ -369,13 +375,15 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        52 out of     210   24%
-    IOB Latches:                                16
+  Number of bonded IOBs:                        53 out of     210   25%
+    IOB Flip Flops:                             16
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
   Number of RAMB18E1/FIFO18E1s:                  0 out of     270    0%
-  Number of BUFG/BUFGCTRLs:                      0 out of      32    0%
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+    Number used as BUFGCTRLs:                    0
   Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
   Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     300    0%
   Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
@@ -406,11 +414,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.65
+Average Fanout of Non-Clock Nets:                2.90
 
-Peak Memory Usage:  4986 MB
-Total REAL time to MAP completion:  22 secs 
-Total CPU time to MAP completion:   19 secs 
+Peak Memory Usage:  5004 MB
+Total REAL time to MAP completion:  25 secs 
+Total CPU time to MAP completion:   21 secs 
 
 Mapping completed.
 See MAP report file "alu_map.mrp" for details.

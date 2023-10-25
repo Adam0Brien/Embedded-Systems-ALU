@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-09-27T12:46:30</DateModified>
+  <DateModified>2023-10-25T11:58:50</DateModified>
   <ModuleName>alu</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/20093460/Downloads/Embedded-Systems-Arch-Assignment1-main/Embedded-Systems-Arch-Assignment1-main/CPU_PROJ/iseconfig/alu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/20093460/Downloads/Embedded-Systems-Arch-Assignment1-main/Embedded-Systems-Arch-Assignment1-main/CPU_PROJ</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/iseconfig/alu.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ\</ImplementationReportsDirectory>
   <DateInitialized>2023-09-27T12:44:41</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
