@@ -60,6 +60,7 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="alu_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="alu_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="alu_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="alu_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="alu_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="alu_xst.xrpt"/>
@@ -68,14 +69,18 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="comparator.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="comparator_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="comparator_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="comparator_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="comparator_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="comparator_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="comparator_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="shift_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shift_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shift_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="shift_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="shift_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shift_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -83,58 +88,58 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1698234008" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1698234008">
+    <transform xil_pn:end_ts="1698333805" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1698333805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1698234008" xil_pn:in_ck="2196623191704890494" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1698234008">
+    <transform xil_pn:end_ts="1698333805" xil_pn:in_ck="-4590843369550010097" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1698333805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="alu_tb.vhd"/>
       <outfile xil_pn:name="comparator.vhd"/>
       <outfile xil_pn:name="comparator_tb.vhd"/>
+      <outfile xil_pn:name="shift.vhd"/>
+      <outfile xil_pn:name="shift_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1698234008" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8079133149696658771" xil_pn:start_ts="1698234008">
+    <transform xil_pn:end_ts="1698333805" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7838987895650553837" xil_pn:start_ts="1698333805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1698234008" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7113846432441002059" xil_pn:start_ts="1698234008">
+    <transform xil_pn:end_ts="1698333805" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4006474246023720625" xil_pn:start_ts="1698333805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1698234008" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8751077464143803467" xil_pn:start_ts="1698234008">
+    <transform xil_pn:end_ts="1698333805" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8751077464143803467" xil_pn:start_ts="1698333805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1698234008" xil_pn:in_ck="2196623191704890494" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1698234008">
+    <transform xil_pn:end_ts="1698333805" xil_pn:in_ck="-4590843369550010097" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1698333805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="alu_tb.vhd"/>
       <outfile xil_pn:name="comparator.vhd"/>
       <outfile xil_pn:name="comparator_tb.vhd"/>
+      <outfile xil_pn:name="shift.vhd"/>
+      <outfile xil_pn:name="shift_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1698234011" xil_pn:in_ck="2196623191704890494" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4870960742219458336" xil_pn:start_ts="1698234008">
+    <transform xil_pn:end_ts="1698333808" xil_pn:in_ck="-4590843369550010097" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4993959633818988340" xil_pn:start_ts="1698333805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="comparator_tb_beh.prj"/>
-      <outfile xil_pn:name="comparator_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="shift_tb_beh.prj"/>
+      <outfile xil_pn:name="shift_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1698234011" xil_pn:in_ck="7564732675545174665" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8200821433731411401" xil_pn:start_ts="1698234011">
+    <transform xil_pn:end_ts="1698333808" xil_pn:in_ck="6134771271392791096" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8083473042320649941" xil_pn:start_ts="1698333808">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="comparator_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="shift_tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1695815197" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1695815197">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -164,14 +169,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1698231935" xil_pn:in_ck="-5040987377527782214" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="8366374044894184594" xil_pn:start_ts="1698231925">
+    <transform xil_pn:end_ts="1698331747" xil_pn:in_ck="-8678680298772158520" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="8366374044894184594" xil_pn:start_ts="1698331736">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="alu.lso"/>
       <outfile xil_pn:name="alu.ngc"/>
@@ -180,6 +184,7 @@
       <outfile xil_pn:name="alu.stx"/>
       <outfile xil_pn:name="alu.syr"/>
       <outfile xil_pn:name="alu.xst"/>
+      <outfile xil_pn:name="alu_tb_beh.prj"/>
       <outfile xil_pn:name="alu_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -188,7 +193,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1698231943" xil_pn:in_ck="129639544584" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3273919073213041574" xil_pn:start_ts="1698231935">
+    <transform xil_pn:end_ts="1698331755" xil_pn:in_ck="129639544584" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3273919073213041574" xil_pn:start_ts="1698331747">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -198,7 +203,7 @@
       <outfile xil_pn:name="alu.ngd"/>
       <outfile xil_pn:name="alu_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1698231971" xil_pn:in_ck="129639544585" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="2100985583056581773" xil_pn:start_ts="1698231943">
+    <transform xil_pn:end_ts="1698331782" xil_pn:in_ck="129639544585" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="2100985583056581773" xil_pn:start_ts="1698331755">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -213,7 +218,7 @@
       <outfile xil_pn:name="alu_summary.xml"/>
       <outfile xil_pn:name="alu_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1698232000" xil_pn:in_ck="153744345147220642" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1698231971">
+    <transform xil_pn:end_ts="1698331811" xil_pn:in_ck="153744345147220642" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1698331782">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -228,7 +233,7 @@
       <outfile xil_pn:name="alu_pad.txt"/>
       <outfile xil_pn:name="alu_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1698232000" xil_pn:in_ck="129639544453" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1698231988">
+    <transform xil_pn:end_ts="1698331811" xil_pn:in_ck="129639544453" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1698331799">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>

@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\20093460\Downloads\Embedded-Systems-ALU-main\Embedded-Systems-ALU-main\CPU_PROJ\comparator_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/comparator_tb_isim_beh.wdb 
+Running: C:\Users\20093460\Downloads\Embedded-Systems-ALU-main\Embedded-Systems-ALU-main\CPU_PROJ\shift_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/shift_tb_isim_beh.wdb 
 ISim P.58f (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.

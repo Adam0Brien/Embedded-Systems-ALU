@@ -2,12 +2,12 @@ Command line:
    comparator_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50411
+     -socket  62526
 
-Wed Oct 25 12:40:12 2023
+Thu Oct 26 16:01:53 2023
 
 
- Elaboration Time: 0 sec
+ Elaboration Time: 0.015625 sec
 
  Current Memory Usage: 5144.35 Meg
 
@@ -21,9 +21,9 @@ Wed Oct 25 12:40:12 2023
  Total Scalar Nets and Variables : 521
 Total Line Count : 30
 
- Total Simulation Time: 0 sec
+ Total Simulation Time: 0.046875 sec
 
- Current Memory Usage: 4672.5 Meg
+ Current Memory Usage: 4672.49 Meg
 
-Wed Oct 25 12:48:25 2023
+Thu Oct 26 16:23:23 2023
 

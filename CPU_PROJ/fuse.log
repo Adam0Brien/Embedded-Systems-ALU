@@ -1,21 +1,21 @@
-Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/comparator_tb_isim_beh.exe -prj C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/comparator_tb_beh.prj work.comparator_tb 
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/shift_tb_isim_beh.exe -prj C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/shift_tb_beh.prj work.shift_tb 
 ISim P.58f (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/comparator.vhd" into library work
-Parsing VHDL file "C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/comparator_tb.vhd" into library work
+Parsing VHDL file "C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/shift.vhd" into library work
+Parsing VHDL file "C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/shift_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
-Compiling architecture behavioral of entity comparator [comparator_default]
-Compiling architecture behavior of entity comparator_tb
+Compiling architecture behavioral of entity shift [shift_default]
+Compiling architecture behavior of entity shift_tb
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\comparator_tb_isim_beh.exe.sim\libPortability.dll".
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\shift_tb_isim_beh.exe.sim\libPortability.dll".
 Compiled 6 VHDL Units
-Built simulation executable C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/comparator_tb_isim_beh.exe
-Fuse Memory Usage: 36040 KB
-Fuse CPU Usage: 342 ms
+Built simulation executable C:/Users/20093460/Downloads/Embedded-Systems-ALU-main/Embedded-Systems-ALU-main/CPU_PROJ/shift_tb_isim_beh.exe
+Fuse Memory Usage: 35760 KB
+Fuse CPU Usage: 358 ms

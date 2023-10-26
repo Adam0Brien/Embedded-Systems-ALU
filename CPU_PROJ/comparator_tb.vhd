@@ -46,7 +46,7 @@ ARCHITECTURE behavior OF comparator_tb IS
          inp_a : IN  signed(15 downto 0);
          inp_b : IN  signed(15 downto 0);
          sel : IN  std_logic_vector(2 downto 0);
-         out_comp : OUT  std_logic
+         out_comp : OUT std_logic
         );
     END COMPONENT;
     
